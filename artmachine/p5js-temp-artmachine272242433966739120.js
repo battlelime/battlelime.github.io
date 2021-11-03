@@ -8,6 +8,7 @@ function preload() {
 // preload() runs once, it may make you wait
   img = loadImage('grass.png');  // cat.jpg needs to be next to this .js file
   img2 = loadImage('tree.png'); 
+  img3 = loadImage('birds.png'); 
 // you can link to an image on your github account
 //  img = loadImage('https://dma-git.github.io/images/74.png');
 }
@@ -65,9 +66,8 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == '7') { // seventh tool; tree
     image(img2, mouseX - 100, mouseY - 100, 200, 200);
     
-  } else if (toolChoice == '8') { // eigth tool;
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 20, 20);
+  } else if (toolChoice == '8') { // eigth tool; birds
+    image(img3, mouseX - 50, mouseY - 50, 100, 100);
     
   } else if (toolChoice == '9') { // ninth tool; 
     fill(300, 100, 0, 80);
