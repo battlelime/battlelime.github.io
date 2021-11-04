@@ -76,10 +76,10 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == '9') { // ninth tool; steve from minecraft
     image(img4, mouseX - 12, mouseY - 25, 25, 50);
     
-  } else if (toolChoice == '0') { // tenth tool; 
+  } else if (toolChoice == '0') { // tenth tool; haze & shade
     stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
+    fill(0, 0, 0, 1); 
+    ellipse(mouseX, mouseY, 75, 75);
     
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     image(img, mouseX - 50, mouseY - 25, 100, 50); 
