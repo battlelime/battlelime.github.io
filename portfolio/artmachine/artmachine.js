@@ -1,6 +1,7 @@
 var img;
 var img2;
 var img3;
+var img4;
 var initials ='jt'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
@@ -11,6 +12,7 @@ function preload() {
   img = loadImage('grass.png');  // cat.jpg needs to be next to this .js file
   img2 = loadImage('tree.png'); 
   img3 = loadImage('birds.png'); 
+  img4 = loadImage('steve.png'); 
 // you can link to an image on your github account
 //  img = loadImage('https://dma-git.github.io/images/74.png');
 }
@@ -72,9 +74,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     image(img3, mouseX - 50, mouseY - 50, 100, 100);
     
   } else if (toolChoice == '9') { // ninth tool; steve from minecraft
-    fill(235, 114, 49); 
-    noStroke(); 
-    ellipse(mouseX, mouseY, 50, 50);
+    image(img4, mouseX - 12, mouseY - 25, 25, 50);
     
   } else if (toolChoice == '0') { // tenth tool; 
     stroke(0, 0);
